@@ -1,0 +1,30 @@
+---
+const studies = [{
+    school: "Lycée Montaigne (Bordeaux, France)",
+    cursus: "Preparatory Classes for Engineering School, Specialized in Mathematics and Computer Sciences",
+    date: "September 2022 - June 2024",
+    desc: "",
+    },
+    {
+    school: "Polytech Montpellier (France)",
+    cursus: "Computer Science and Management Engineer",
+    date: "2024 - 2027",
+    desc: "",  
+    }
+];
+---
+
+<div class="studies">
+    <h2>Studies</h2>
+
+    <ul>
+        {studies.map(study => (
+            <li key={study.school}>
+                <h3>{study.school}</h3>
+                <p>{study.cursus}</p>
+                <p>{study.date}</p>
+                <p>{study.desc}</p>
+            </li>
+        ))}
+    </ul>
+</div>
