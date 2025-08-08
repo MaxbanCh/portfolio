@@ -8,4 +8,9 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://axithem.fr',
 	integrations: [mdx(), sitemap()],
+	image: {
+		service: {
+			entrypoint: 'astro/assets/services/noop'
+		}
+	}
 });
