@@ -3,13 +3,13 @@ const studies = [{
     school: "Lycée Montaigne (Bordeaux, France)",
     cursus: "Preparatory Classes for Engineering School, Specialized in Mathematics and Computer Sciences",
     date: "September 2022 - June 2024",
-    desc: "",
+    desc: "Intensive two-year program preparing students for the competitive entrance exams to French engineering schools.",
     },
     {
     school: "Polytech Montpellier (France)",
-    cursus: "Computer Science and Management Engineer",
+    cursus: "Computer Science Engineering Student",
     date: "2024 - 2027",
-    desc: "",  
+    desc: "Currently enrolled in a Computer Science Engineering program, focusing on software development and data science.",
     }
 ];
 ---
@@ -19,7 +19,7 @@ const studies = [{
 
     <ul>
         {studies.map(study => (
-            <li key={study.school}>
+            <li>
                 <h3>{study.school}</h3>
                 <p>{study.cursus}</p>
                 <p>{study.date}</p>

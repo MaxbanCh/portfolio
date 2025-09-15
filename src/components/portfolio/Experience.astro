@@ -4,7 +4,9 @@ const exp = [{
     company: "LIRMM, in project Numdiag",
     date: "June - July 2025",
     desc: "During my internship for my 3rd year, I had the opportunity to conceptualize and develop web apps for the Numdiag project",
-}];
+    technologies: ["React JS", "Node JS", "Express JS", "Postgres", "Docker", "Python"],
+    }
+];
 
 ---
 
@@ -12,11 +14,12 @@ const exp = [{
     <h2>Experience</h2>
     <ul>
         {exp.map(experience => (
-            <li key={experience.title}>
+            <li>
                 <h3>{experience.title}</h3>
                 <p>{experience.company}</p>
                 <p>{experience.date}</p>
                 <p>{experience.desc}</p>
+                <p>Technologies: {experience.technologies.join(", ")}</p>
             </li>
         ))}
     </ul>
